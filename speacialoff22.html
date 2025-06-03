@@ -1,22 +1,162 @@
-<div style="font-family: sans-serif; max-width: 900px; margin: auto;">
-  <h2 style="text-align: center; color: #444;">تخفیفات ویژه فروشگاه برکت پلاس</h2>
-  
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تخفیفات ویژه | برکت پلاس</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f2f4f8;
+      font-family: 'Vazirmatn', sans-serif;
+      direction: rtl;
+    }
 
-    <!-- محصول ۱ -->
-    <div style="border: 1px solid #eee; border-radius: 8px; width: 200px; padding: 10px; text-align: center;">
-      <img src="https://oss.sazito.com/apiuploads/barakatplusir/uploads/image/rootimage/412/1bb62bdab8b903cf78d68b6ce1d90dc5.jpg?w=800&h=800" alt="گردو" style="width: 100%; border-radius: 6px;">
-      <h3 style="font-size: 16px;">گردو</h3>
-      <p style="text-decoration: line-through; color: #888;">۴۰۰,۰۰۰ تومان</p>
-      <p style="font-weight: bold; color: green;">۳۲۰,۰۰۰ تومان</p>
-      <a href="https://barakatplus.ir/product/%DA%AF%D8%B1%D8%AF%D9%88-%D8%A8%D8%A7-%D9%BE%D9%88%D8%B3%D8%AA" target="_blank" style="display: inline-block; margin-top: 10px; padding: 6px 12px; background: #27ae60; color: white; text-decoration: none; border-radius: 4px;">خرید</a>
+    .wrapper {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+
+    .product-info {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-title {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .prices {
+      margin-bottom: 12px;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    .discounted-price {
+      color: #d32f2f;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background-color: #009688;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>تخفیفات ویژه فروشگاه برکت پلاس</h1>
+    <div class="grid">
+
+      <!-- محصول ۱ -->
+      <div class="product-card">
+        <img src="https://oss.sazito.com/apiuploads/barakatplusir/uploads/image/rootimage/412/1bb62bdab8b903cf78d68b6ce1d90dc5.jpg?w=800&h=800" alt="گردو" class="product-image">
+        <div class="product-info">
+          <div class="product-title">گردو</div>
+          <div class="prices">
+            <div class="original-price">۴۰۰٬۰۰۰ تومان</div>
+            <div class="discounted-price">۳۲۰٬۰۰۰ تومان</div>
+          </div>
+          <a href="https://barakatplus.ir/product/%DA%AF%D8%B1%D8%AF%D9%88-%D8%A8%D8%A7-%D9%BE%D9%88%D8%B3%D8%AA" class="btn" target="_blank">مشاهده محصول</a>
+        </div>
+      </div>
+
+      <!-- محصول ۲ -->
+      <div class="product-card">
+        <img src="لینک_عکس_۲" alt="نام محصول ۲" class="product-image">
+        <div class="product-info">
+          <div class="product-title">نام محصول ۲</div>
+          <div class="prices">
+            <div class="original-price">قیمت قبل</div>
+            <div class="discounted-price">قیمت با تخفیف</div>
+          </div>
+          <a href="لینک_محصول_۲" class="btn" target="_blank">مشاهده محصول</a>
+        </div>
+      </div>
+
+      <!-- محصول ۳ -->
+      <div class="product-card">
+        <img src="لینک_عکس_۳" alt="نام محصول ۳" class="product-image">
+        <div class="product-info">
+          <div class="product-title">نام محصول ۳</div>
+          <div class="prices">
+            <div class="original-price">قیمت قبل</div>
+            <div class="discounted-price">قیمت با تخفیف</div>
+          </div>
+          <a href="لینک_محصول_۳" class="btn" target="_blank">مشاهده محصول</a>
+        </div>
+      </div>
+
+      <!-- محصول ۴ -->
+      <div class="product-card">
+        <img src="لینک_عکس_۴" alt="نام محصول ۴" class="product-image">
+        <div class="product-info">
+          <div class="product-title">نام محصول ۴</div>
+          <div class="prices">
+            <div class="original-price">قیمت قبل</div>
+            <div class="discounted-price">قیمت با تخفیف</div>
+          </div>
+          <a href="لینک_محصول_۴" class="btn" target="_blank">مشاهده محصول</a>
+        </div>
+      </div>
+
     </div>
-
-    <!-- محصول ۲ -->
-    <!-- اینجا مشابه محصول اول، کد محصول بعدی رو جایگذاری کن -->
-
-    <!-- محصول ۳ -->
-    <!-- محصول ۴ -->
-
   </div>
-</div>
+
+</body>
+</html>
