@@ -1,111 +1,22 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>تخفیفات ویژه - برکت پلاس</title>
-  <style>
-    body {
-      font-family: Vazir, sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 40px;
-      display: flex;
-      justify-content: center;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-      max-width: 1000px;
-      width: 100%;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-      padding: 16px;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-    }
-    .card img {
-      width: 100%;
-      height: auto;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    h3 {
-      font-size: 1.2rem;
-      margin: 10px 0 5px;
-    }
-    .price {
-      text-decoration: line-through;
-      color: #888;
-      margin-bottom: 4px;
-    }
-    .discount {
-      color: #e91e63;
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-      background: #009688;
-      padding: 6px 14px;
-      border-radius: 8px;
-      display: inline-block;
-    }
-    a:hover {
-      background: #00796b;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
+<div style="font-family: sans-serif; max-width: 900px; margin: auto;">
+  <h2 style="text-align: center; color: #444;">تخفیفات ویژه فروشگاه برکت پلاس</h2>
+  
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
 
     <!-- محصول ۱ -->
-    <div class="card">
-      <img src="https://oss.sazito.com/apiuploads/barakatplusir/uploads/image/rootimage/412/1bb62bdab8b903cf78d68b6ce1d90dc5.jpg?w=800&h=800" alt="گردو">
-      <h3>گردو</h3>
-      <div class="price">۴۰۰٬۰۰۰ تومان</div>
-      <div class="discount">۳۲۰٬۰۰۰ تومان</div>
-      <a href="https://barakatplus.ir/product/%DA%AF%D8%B1%D8%AF%D9%88-%D8%A8%D8%A7-%D9%BE%D9%88%D8%B3%D8%AA" target="_blank">مشاهده محصول</a>
+    <div style="border: 1px solid #eee; border-radius: 8px; width: 200px; padding: 10px; text-align: center;">
+      <img src="https://oss.sazito.com/apiuploads/barakatplusir/uploads/image/rootimage/412/1bb62bdab8b903cf78d68b6ce1d90dc5.jpg?w=800&h=800" alt="گردو" style="width: 100%; border-radius: 6px;">
+      <h3 style="font-size: 16px;">گردو</h3>
+      <p style="text-decoration: line-through; color: #888;">۴۰۰,۰۰۰ تومان</p>
+      <p style="font-weight: bold; color: green;">۳۲۰,۰۰۰ تومان</p>
+      <a href="https://barakatplus.ir/product/%DA%AF%D8%B1%D8%AF%D9%88-%D8%A8%D8%A7-%D9%BE%D9%88%D8%B3%D8%AA" target="_blank" style="display: inline-block; margin-top: 10px; padding: 6px 12px; background: #27ae60; color: white; text-decoration: none; border-radius: 4px;">خرید</a>
     </div>
 
     <!-- محصول ۲ -->
-    <div class="card">
-      <img src="لینک_عکس_محصول_۲" alt="نام محصول ۲">
-      <h3>نام محصول ۲</h3>
-      <div class="price">قیمت قبل</div>
-      <div class="discount">قیمت با تخفیف</div>
-      <a href="لینک_محصول_۲" target="_blank">مشاهده محصول</a>
-    </div>
+    <!-- اینجا مشابه محصول اول، کد محصول بعدی رو جایگذاری کن -->
 
     <!-- محصول ۳ -->
-    <div class="card">
-      <img src="لینک_عکس_محصول_۳" alt="نام محصول ۳">
-      <h3>نام محصول ۳</h3>
-      <div class="price">قیمت قبل</div>
-      <div class="discount">قیمت با تخفیف</div>
-      <a href="لینک_محصول_۳" target="_blank">مشاهده محصول</a>
-    </div>
-
     <!-- محصول ۴ -->
-    <div class="card">
-      <img src="لینک_عکس_محصول_۴" alt="نام محصول ۴">
-      <h3>نام محصول ۴</h3>
-      <div class="price">قیمت قبل</div>
-      <div class="discount">قیمت با تخفیف</div>
-      <a href="لینک_محصول_۴" target="_blank">مشاهده محصول</a>
-    </div>
 
   </div>
-</body>
-</html>
+</div>
